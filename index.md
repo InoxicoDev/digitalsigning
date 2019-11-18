@@ -12,7 +12,8 @@ The `Serialized Signed Content` will be used as the "Original Content". This is 
 The `Digital Signature` is the actual signature of the `Serialized Signed Content` but in an encoded form.
 The `User Public Key` is the Public Key used to verify that the signature is valid and that the content is not tampered with.
 
-[link1](online-signature-verification-service)
+[Online Signature Verification service](#online-signature-verification-service)
+[OpenSSL command-line](#openssl-command-line)
 
 ## Online Signature Verification service
 
