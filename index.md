@@ -28,5 +28,12 @@ On arriving on the page, it is afvised to make the following adjustments before 
 
   ![Set SHA256withRSA](images/SetRSASigAlgo.png)
 
+Please then copy the `Serialized Signed Content` into the `ClearText Message` text block, `Digital Signature` into the `Provide Signature Value` text block and the `User Public Key` intot the `Public Key` text block. Like so:
+
+![All Copied in](images/AllCopiedIn.png)
+
+Once that is done, you will notice that a loading indicator appears, follwed by the result of the information that is pasted into the site.
+
+![Success](images/SuccessResult.png)
 
 ## OpenSSL command-line
