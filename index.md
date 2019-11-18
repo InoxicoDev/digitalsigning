@@ -21,7 +21,7 @@ The `User Public Key` is the Public Key used to verify that the signature is val
 
 This [Online Signature Verification service](https://8gwifi.org/rsasignverifyfunctions.jsp) allows convenience and simple access to verify that the content is correct.
 
-On arriving on the page, it is afvised to make the following adjustments before beginning:
+On arriving on the page, it is advised to make the following adjustments before beginning:
 
 - Select the `Verify Signature` option at the top of the page, just below the heading
   
