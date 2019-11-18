@@ -12,8 +12,10 @@ The `Serialized Signed Content` will be used as the "Original Content". This is 
 The `Digital Signature` is the actual signature of the `Serialized Signed Content` but in an encoded form.
 The `User Public Key` is the Public Key used to verify that the signature is valid and that the content is not tampered with.
 
-[Online Signature Verification service](#online-signature-verification-service)
-[OpenSSL command-line](#openssl-command-line)
+
+### Tools
+- [Online Signature Verification service](#online-signature-verification-service)
+- [OpenSSL command-line](#openssl-command-line)
 
 ## Online Signature Verification service
 
@@ -40,3 +42,23 @@ Once that is done, you will notice that a loading indicator appears, follwed by 
 ![Success](images/SuccessResult.png)
 
 ## OpenSSL command-line
+
+Copy the `Serialized Signed Content`, `Digital Signature` and the `User Public Key` into three distinct files respectively. For example: content.txt, contentsignature.txt and publickey.pem and place them in a location where you can easily access them with the `openssl` command-line tool.
+
+OpenSSL unfortunately doesn't work with the Base64 format version of the digital signature, so we will have to convert it to binary first.
+
+You can easily perform this using this command:
+
+```powershell
+openssl base64 -d -in .\contentsignature.txt -out .\content.sign
+```
+
+Now you can perform the verification command:
+
+```powershell
+openssl dgst -sha256 -verify .\publickey.pem -signature .\content.sign content.txt
+```
+
+You should then see the outcome of the verification command:
+
+![Success](images/SuccessResultCmdLine.png)
