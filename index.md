@@ -1,6 +1,6 @@
 # Digital signatures with Fabric
 
-Welcome. You have probably arrived at this page from our Fabric Digital Signing page to see how you can verify the information that are found in the `Technical Details` section.
+Welcome. You have probably arrived at this page from our Fabric Digital Signing page to see how you can verify the information that is found in the `Technical Details` section.
 
 To start, you need to decide which tools you are going to use to verify this. There are a couple of 3rd party tools that adhere to the Cryptographic signing standard that will work.
 
@@ -33,11 +33,11 @@ On arriving on the page, it is advised to make the following adjustments before 
 
   ![Set SHA256withRSA](images/SetRSASigAlgo.png)
 
-Please then copy the `Serialized Signed Content` into the `ClearText Message` text block, `Digital Signature` into the `Provide Signature Value` text block and the `User Public Key` intot the `Public Key` text block. Like so:
+Please then copy the `Serialized Signed Content` into the `ClearText Message` text block, `Digital Signature` into the `Provide Signature Value` text block and the `User Public Key` into the `Public Key` text block. Like so:
 
 ![All Copied in](images/AllCopiedIn.png)
 
-Once that is done, you will notice that a loading indicator appears, follwed by the result of the information that is pasted into the site.
+Once that is done, you will notice that a loading indicator appears, followed by the result of the information that is pasted into the site.
 
 ![Success](images/SuccessResult.png)
 
