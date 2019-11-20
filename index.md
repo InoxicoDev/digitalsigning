@@ -33,7 +33,7 @@ On arriving on the page, it is advised to make the following adjustments before 
 
   ![Set SHA256withRSA](images/SetRSASigAlgo.png)
 
-Please then copy the `Serialized Signed Content` into the `ClearText Message` text block, `Digital Signature` into the `Provide Signature Value` text block and the `User Public Key` into the `Public Key` text block. Like so:
+Please then copy the `User Public Key` into the `Public Key` text block, the `Serialized Signed Content` into the `ClearText Message` text block and the `Digital Signature` into the `Provide Signature Value` text block. Like so:
 
 ![All Copied in](images/AllCopiedIn.png)
 
